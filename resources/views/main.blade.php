@@ -1,9 +1,8 @@
 @extends('/layout')
 @section('content')
 
-<!-- Container for the image slider -->
+<!-- image slider -->
 <div class="slideshow-container">
-    <!-- Full-width images with number text -->
     <div class="mySlides">
         <img src="{{ asset('PS_images/m11.png') }}" alt="Image 1" style="width:100%; height:260px">
         <div class="caption"><b class="animate-charcter">Beaute et soins</b></div>
@@ -38,6 +37,7 @@
     <a id="prevButton" class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a id="nextButton" class="next" onclick="plusSlides(1)">&#10095;</a>
   <br>
+  <!-- Services de website -->
     <h3 class="service-header">Services & avantages</h3>
     <div class="service-container">
         <div class="item1">
@@ -55,7 +55,7 @@
     </div><br>
 
     @include('products')<br>
-
+<!-- Produits populaires maintenant-->
     <h3 class="popular-header">Actuellement populaire sur Pharmacie shop</h3>
       <div class="popular-container">
         <div class="itempopular">
@@ -74,7 +74,26 @@
         <a href=""><p class="popular-tite"><b>Serum</b></p></a>
        </div>
     </div><br>
+    <!-- Notre marques-->
 
+    <h3 class="marques-header">Notre marques</h3>
+    <div class="marques-container">
+      <div class="item-marque">
+          <a href=""><img class="marque-img" src="marques/CeraVe_Logo.jpg" alt=""></a>
+      </div>
+      <div class="item-marque">
+          <a href=""><img class="marque-img" src="marques/LogoLaRochePosay.jpg" alt=""></a>
+      </div>
+      <div class="item-marque">
+         <a href=""><img class="marque-img" src="marques/logo-biafine.png" alt=""></a>
+      </div>
+      <div class="item-marque">
+        <a href=""><img class="marque-img" src="marques/Unicity-Logo.jpg" alt=""></a>
+     </div>
+  </div><br>
+
+
+<!--Avis des clients-->
 <h3 class="avis-header">Avis des clients</h3>
 			<section id="testimonial_area" class="section_padding">
 				<div class="container">
@@ -175,7 +194,7 @@
 									    <i class="fa fa-youtube"></i>
 									</h6>
 								</div> 
-							
+
 								<div class="box-area">	
 									<div class="img-area">
 										<img src="portrait/portrait20.png" alt="">
@@ -200,9 +219,11 @@
 				</div>
 			</section>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-		<script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script>
         $(".testmonial_slider_area").owlCarousel({
 				autoplay: true,
 				slideSpeed:1000,
@@ -228,8 +249,7 @@
 				}
 				
 			});
-    </script>
-
+</script>
 <script src="{{ asset('js/script.js') }}"></script>
 
 @endsection

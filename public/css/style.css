@@ -345,7 +345,7 @@ body{
   box-shadow: 20px;
 }
 .itempopular:hover{
-  background-color: rgb(96, 100, 121);
+  background-color: rgb(175, 175, 175);
 }
 .popular-tite{
     /* margin-left: 3px; */
@@ -457,4 +457,31 @@ a{
 	.owl-nav {
 		display: none;
 	}
+}
+
+.marques-header{
+  font-size: 20px ;
+  font-family:  'Aclonica';
+  margin-left: 19px;
+}
+
+.marques-container{
+  display: flex;
+  margin-left: 70px;
+
+}
+.item-marque {
+  border: 1px solid black;
+  display: flex;
+  background-color: rgb(254, 255, 253);
+  padding: 3px;
+  width:280px;
+  box-shadow:0px 2px 11px #141414;;
+  height: 210px;
+  margin: 7px;
+
+}
+.marque-img{
+  width: 260px;
+  height: 200px;
 }
