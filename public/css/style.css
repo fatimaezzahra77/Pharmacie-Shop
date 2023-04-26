@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Aclonica';
+    font-style: normal;
+    src: url('public/fonts/Aclonica-Regular.ttf') format('truetype');
+}
+
+body{
+    margin: 0px;
+    /* background: linear-gradient(to right, #2e4723, #f8ffc8); */
+
+}
+#header{
+    color: rgb(29, 107, 29);
+    margin: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    
+}
+.btn{
+    background-color: rgb(10, 77, 54);
+}
+.card{
+    display: inline-flex;
+    margin: 6px;
+    padding:2px;
+    width: 210px;
+}
+
+.search-bar-container{
+    background-color: #ffffff;
+    height: 75px;
+}
+.search-form{
+    width: 30rem;
+    margin-left: 4rem;
+}
+.search-form input{
+    font-size: 16px;
+    font-family: 'Aclonica';
+    border-radius: 6px;
+    margin-top: -26px;
+    margin-right: 25px;
+    /* margin-bottom: 14px; */
+}
+@media (max-width: 776px) {
+  .search-form input {
+    width: 20rem;
+    margin-left: 1rem;
+    align-items: center;
+  }
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    margin: 10px 20px ;
+    font-size: 17px;
+    font-family:  'Aclonica';
+}
+.nav-link:hover{
+    color: rgb(157, 233, 139);
+    
+}
+
+.navbar{
+  background-color: #05a31a;
+    align-items: center;
+    height: 60px;
+    
+}
+.icon{
+    width:25px;
+    height: 25px;
+    border: none;
+}
+.icon:hover{
+    color: rgb(157, 233, 139);
+
+}
+#icon{
+    margin: 20px 20px;
+}
+.navbar-brand{
+    text-decoration: none;
+    color: white;
+    font-family:  'Aclonica';
+}
+.navbar-brand:hover{
+    color: rgb(157, 233, 139);
+}
+
+@media (max-width: 480) {
+    /* Style the navbar for small screens */
+    .navbar-nav {
+      flex-direction:column
+    }
+  }
+.header{
+    text-align: left;
+    margin-left: -20rem;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+/* Position the image container (needed to position the left and right arrows) */
+  .slideshow-container {
+    position: relative;
+}
+  
+/* Hide the images by default */
+  .mySlides {
+    display: none;
+}
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    width: auto;
+    /* height: 40px; */
+    padding: 16px;
+    margin-top: -90px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 34px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgb(139, 255, 183);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+.mySlides{
+    transform: translateX(0%);
+    transition: transform 1s ease-in-out;
+}
+.mySlides{
+  position:relative;
+
+}
+.caption {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  /* color: rgb(0, 0, 0); */
+  font-size: 39px;
+  z-index: 1;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(195, 255, 116) 0%,
+    /* #b64edf 29%, */
+    #510061 67%,
+    #a6ff00 100%
+  );
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 39px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* .img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+} */
+
+
+.service-header{
+    font-size: 20px ;
+    font-family:  'Aclonica';
+    margin-left: 19px;
+}
+.service-container {
+  /* position: absolute; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 30px;
+}
+  
+  .item {
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center; /* center items vertically */
+    justify-content: center; /* center items horizontally */
+    background-color: rgb(254, 255, 253);
+    padding: 10px;
+    width: 350px;
+    box-shadow: 20px;
+  }
+  .item1 {
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center; /* center items vertically */
+    justify-content: center; /* center items horizontally */
+    background-color: rgb(254, 255, 253);
+    padding: 10px;
+    width: 290px;
+    box-shadow: 20px;
+  }
+  
+  .icon {
+    margin-right: 10px; /* add some spacing between icon and text */
+    width: 30px;
+    height: 30px;
+  }
+
+  .service-tite{
+    margin-left: 3px;
+    font-size: 15px;
+    font-family: 'Aclonica';
+    text-align: center;
+    margin-top: 13px;
+  }
+  .produits-title{
+    font-size: 20px ;
+    font-family:  'Aclonica';
+    margin-left: 19px;
+  }
+
+.produits-header{
+  display: flex;
+}
+.produits-seemore{
+  margin-left: 790px;
+  text-decoration: none;
+  /* font-family: 'Aclonica'; */
+
+}
+.produits-seemore:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+.produitslist-container{
+  margin-left: 16px;
+}
+.produits-title2{
+  font-size: 20px ;
+  font-family:  'Aclonica';
+  margin-left: 19px;
+  margin-top: 1rem;
+}
+.popular-header{
+  font-size: 20px ;
+  font-family:  'Aclonica';
+  margin-left: 19px;
+}
+
+.popular-container{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.itempopular {
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center; /* center items vertically */
+  justify-content: center; /* center items horizontally */
+  background-color: rgb(254, 255, 253);
+  padding: 3px;
+  width: 180px;
+  box-shadow: 20px;
+}
+.itempopular:hover{
+  background-color: rgb(96, 100, 121);
+}
+.popular-tite{
+    /* margin-left: 3px; */
+    font-size: 15px;
+    font-family: 'Aclonica';
+    text-align: center;
+    margin-top: 13px;
+    text-decoration: none;
+    color: black;
+}
+a{
+  text-decoration: none;
+}
+.avis-header{
+  font-size: 20px ;
+  font-family:  'Aclonica';
+  margin-left: 19px;
+}
