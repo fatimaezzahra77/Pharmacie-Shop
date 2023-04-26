@@ -1,3 +1,6 @@
+<div class="container">
+  <div class="row">
+<div class="col-md-12" >
 <div class="produits-header">
   <h3 class="produits-title">Nos medicaments sans ordonnance</h3>
   @if (count($medicaments) >= 10)
@@ -16,6 +19,9 @@
       </div>
     </div>
     @endforeach 
+</div>
+</div>
+</div>
 </div>
 
 

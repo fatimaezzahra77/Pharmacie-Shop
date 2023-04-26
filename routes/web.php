@@ -9,6 +9,7 @@ use App\Http\Controllers\hygieneController;
 Route::get('/', [mainController::class, 'main']);
 Route::get('/medicaments', [mainController::class, 'index']);
 Route::get('/medicaments/all', [mainController::class, 'showAll'])->name('medicaments.showAll');
+Route::get('/medicaments/recommendation', [mainController::class, 'recommendation'])->name('medicaments.recommendation');
 Route::get('/medicaments/{id}', [mainController::class, 'showmedicament'])->name('produits.showmedicament');
 Route::get('/hygiene', [hygieneController::class, 'index']);
 Route::get('/produits/{id}', [hygieneController::class, 'singleProduct']);

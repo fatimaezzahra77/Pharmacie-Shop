@@ -28,7 +28,11 @@
   <div class="search-bar-container"style=" padding:0.5rem;" >
     <div class="row" >
       <div class="col-md-6 offset-md-3" >
-    <a href="/" style="text-decoration: none !important; margin-top: 20px;"><span class="header"  >Pharmacie Shop</span></a>
+      <a href="/" style="text-decoration: none !important; margin-top: 20px;"><span class="header"  >Pharmacie Shop</span></a>
+      <div class="icons-cntainer">
+        <a href="#"><img src="icons/user-interface.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Login</span>--></a>
+        <a href="#"><img src="icons/shopping-cart.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Mon panier</span>--></a>
+      </div>
         <form class="form-inline my-2 my-lg-0 search-form" > 
           <input class="form-control mr-sm-2" type="search" placeholder="chercher un produit, categorie, marque..." aria-label="Search" id="search">
           {{-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> --}}
@@ -68,5 +72,4 @@
   <main>@yield('content')</main>
     {{-- <h1>This is the main page of the website</h1> --}}
 </body>
-
 </html>

@@ -25,14 +25,30 @@ body{
     padding:2px;
     width: 210px;
 }
+.icons-cntainer{
+  position: absolute;
+  top: 16;
+  right: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
+#search-icon{
+  width: 45px;
+  height: 45px;
+  margin-right: 50px;
+}
+.span{
+  margin-top: 30px;
+}
 .search-bar-container{
     background-color: #ffffff;
     height: 75px;
 }
 .search-form{
     width: 30rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
 .search-form input{
     font-size: 16px;
@@ -127,7 +143,7 @@ body{
   .next {
     cursor: pointer;
     position: absolute;
-    top: 10%;
+    top: 3%;
     width: auto;
     /* height: 40px; */
     padding: 16px;
@@ -244,14 +260,14 @@ body{
 .service-header{
     font-size: 20px ;
     font-family:  'Aclonica';
-    margin-left: 19px;
+    margin-left: 38px;
 }
 .service-container {
   /* position: absolute; */
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 30px;
 }
   
@@ -294,7 +310,7 @@ body{
   .produits-title{
     font-size: 20px ;
     font-family:  'Aclonica';
-    margin-left: 19px;
+    margin-left: 21px;
   }
 
 .produits-header{
@@ -467,7 +483,7 @@ a{
 
 .marques-container{
   display: flex;
-  margin-left: 70px;
+  margin-left: 10px;
 
 }
 .item-marque {
@@ -484,4 +500,27 @@ a{
 .marque-img{
   width: 260px;
   height: 200px;
+}
+
+#row{
+  background-color: rgb(235, 232, 232);
+  margin: 10px;
+  padding: 2rem;
+}
+
+#descritpion-content{
+  justify-content: center;
+  text-align: justify;
+}
+
+.redommendation-title{
+  font-size: 20px ;
+    font-family:  'Aclonica';
+    margin-left: 10px;
+}
+.redommendation-header{
+  display: flex;
+}
+#payement{
+  margin: 12px;
 }
