@@ -75,176 +75,163 @@
        </div>
     </div><br>
 
-    <h3 class="avis-header">Avis des clients</h3>
-    <div class="section testimonials container" id="testmonials"><!--testmonials start-->
-      <h2>Testimonials</h2>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c1.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>Henery Nicholas</h4>
-                    <p class="occupation">Photographer</p >
-                    <div class="text">                
-                      <p> Fatima ezzahra and I have worked together several times. He done job very fast. Very responsive,
-                         I would not hesitate in recommending him and getting his help for this kind of jobs.</p >
-                    </div>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c2.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>Steve Anjali </h4>
-                    <p class="occupation">Web Designer</p >
-                    <div class="text">                
-                      <p> She amaze me with quick delivery Communicate well, all expectations and requirements were communicated upfront. Highly recommended
-                        Moreover, it is responsive. I'm very happy with the seller</p >
-                    </div>
-                  </div>
-                </div>
-              </div> 
-               <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c3.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>sarina Willams </h4>
-                    <p  class="occupation">GraphicDesigner</p >
-                    <div class="text">                
-                      <p> She is awesome ; professional and skilled He quickly converted my Figma file to Html, very skilled, 
-                        strong communication & great attitude. He was a major asset to our project, I highly recommend it !</p >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c1.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>Henery Nicholas</h4>
-                    <p class="occupation">Engineer</p >
-                    <div class="text">                
-                      <p>Fatima ezzahra and I have worked together several times. He done job very fast. Very responsive,
-                        I would not hesitate in recommending him and getting his help for this kind of jobs.</p >
-                    </div>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c2.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>Steve Anjali </h4>
-                    <p class="occupation">Engineer</p >
-                    <div class="text">                
-                      <p>She amaze me with quick delivery Communicate well, all expectations and requirements were communicated upfront. Highly recommended
-                        Moreover, it is responsive. I'm very happy with the seller</p >
-                    </div>
-                  </div>
-                </div>
-              </div> 
-               <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c3.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>sarina Willams </h4>
-                    <p class="occupation">Engineer</p >
-                    <div class="text">                
-                      <p>She is awesome ; professional and skilled He quickly converted my Figma file to Html, very skilled, 
-                        strong communication & great attitude. He was a major asset to our project, I highly recommend it !</p >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c1.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>Henery Nicholas</h4>
-                    <p class="occupation">Photographer</p >
-                    <div class="text">                
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero ex quo,
-                         eaque quisquam consequatur dolor illum veritatis veniam itaque optio solut</p >
-                    </div>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c2.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>Mark waugh </h4>
-                    <p class="occupation">Web Designer</p >
-                    <div class="text">                
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero ex quo,
-                         eaque quisquam consequatur dolor illum veritatis veniam itaque optio solut</p >
-                    </div>
-                  </div>
-                </div>
-              </div> 
-               <div class="col-md-4 col-12">
-                <div class="testimonials-single">
-                  <div class="imgBox">
-                    <img src="c3.jpg" alt="Henery"> 
-                  </div>
-                  <div class="content">
-                    <h4>sarina Willams </h4>
-                    <p class="occupation">GraphicDesigner</p >
-                    <div class="text">                
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vero ex quo,
-                         eaque quisquam consequatur dolor illum veritatis veniam itaque optio solut</p >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!--testmonials end-->
-    
-    
-    
-    
-    
+<h3 class="avis-header">Avis des clients</h3>
+			<section id="testimonial_area" class="section_padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="testmonial_slider_area text-center owl-carousel">
+								<div class="box-area">	
+									<div class="img-area">
+										<img src="portrait/portrait7.png" alt="">
+									</div>	
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>									
+									<p class="content">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p>
+									<h6 class="socials">
+									    <i class="fa fa-instagram"></i>
+									    <i class="fa fa-facebook"></i>
+									    <i class="fa fa-linkedin"></i>
+									    <i class="fa fa-youtube"></i>
+									</h6>
+								</div> 
+							
+								<div class="box-area">	
+									<div class="img-area">
+										<img src="portrait/portrait2.png" alt="">
+									</div>	
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>									
+									<p class="content">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p>
+									<h6 class="socials">
+									    <i class="fa fa-instagram"></i>
+									    <i class="fa fa-facebook"></i>
+									    <i class="fa fa-linkedin"></i>
+									    <i class="fa fa-youtube"></i>
+									</h6>
+								</div> 
+							
+								<div class="box-area">	
+									<div class="img-area">
+										<img src="portrait/portrait3.png" alt="">
+									</div>	
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>									
+									<p class="content">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p>
+									<h6 class="socials">
+									    <i class="fa fa-instagram"></i>
+									    <i class="fa fa-facebook"></i>
+									    <i class="fa fa-linkedin"></i>
+									    <i class="fa fa-youtube"></i>
+									</h6>
+								</div> 
+							
+								<div class="box-area">	
+									<div class="img-area">
+										<img src="portrait/portrait15.png" alt="">
+									</div>	
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>									
+									<p class="content">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p>
+									<h6 class="socials">
+									    <i class="fa fa-instagram"></i>
+									    <i class="fa fa-facebook"></i>
+									    <i class="fa fa-linkedin"></i>
+									    <i class="fa fa-youtube"></i>
+									</h6>
+								</div> 
+							
+								<div class="box-area">	
+									<div class="img-area">
+										<img src="portrait/portrait18.png" alt="">
+									</div>	
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>									
+									<p class="content">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p>
+									<h6 class="socials">
+									    <i class="fa fa-instagram"></i>
+									    <i class="fa fa-facebook"></i>
+									    <i class="fa fa-linkedin"></i>
+									    <i class="fa fa-youtube"></i>
+									</h6>
+								</div> 
+							
+								<div class="box-area">	
+									<div class="img-area">
+										<img src="portrait/portrait20.png" alt="">
+									</div>	
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>									
+									<p class="content">
+										Lorem Ipsum is simply dummy text of the printing and 
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+										ever since
+									</p>
+									<h6 class="socials">
+									    <i class="fa fa-instagram"></i>
+									    <i class="fa fa-facebook"></i>
+									    <i class="fa fa-linkedin"></i>
+									    <i class="fa fa-youtube"></i>
+									</h6>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+		<script>
+        $(".testmonial_slider_area").owlCarousel({
+				autoplay: true,
+				slideSpeed:1000,
+				items : 3,
+				loop: true,
+				nav:true,
+				navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+				margin: 30,
+				dots: true,
+				responsive:{
+					320:{
+						items:1
+					},
+					767:{
+						items:2
+					},
+					600:{
+						items:2
+					},
+					1000:{
+						items:3
+					}
+				}
+				
+			});
+    </script>
 
 <script src="{{ asset('js/script.js') }}"></script>
 
 @endsection
+</body>
+</html>
