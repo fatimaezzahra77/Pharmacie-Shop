@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Main;
 use Illuminate\Http\Request;
+use App\Models\recommandation;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -11,10 +12,14 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class mainController extends Controller
 {
 
+  
     public function main(){
+
         $medicaments = Main::take(10)->get();
-        return view('main', ['medicaments'=>$medicaments]);
+        $recommandations = recommandation::take(8)->get();
+        return view('main', ['medicaments'=>$medicaments, 'recommandations'=>$recommandations]);
     }
+
 
     public function index()
     {
@@ -22,6 +27,12 @@ class mainController extends Controller
     return view('products', ['medicaments' => $medicaments]);
     }
 
+    // public function indexrecomm()
+    // {
+    // $recommandations = recommandation::take(6)->get();
+    // return view('recommandation', ['recommandations' => $recommandations]);
+    // }
+     
     public function showAll()
     {
     // Retrieve all products
@@ -42,17 +53,27 @@ class mainController extends Controller
         $medicament->image = asset($medicament->image);
         return view('showmedicament', ['medicament' => $medicament]); 
     }
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function recommendation()
+
+    public function seeMorerecomm()
     {
-         return view('recommendation');
+    // Retrieve all products
+    $recommandations = recommandation::all();
+    // Modify the image URL to include the full URL
+    foreach ($recommandations as $recommandation) {
+        $recommandation->image = asset($recommandation->image);
+    }
+    return view('seeMorerecomm', ['recommandations' => $recommandations]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    public function showrecomm(string $id)
+    {
+        $recommandation = recommandation::findorFail($id);
+        $recommandation->image = asset($recommandation->image);
+        return view('showrecomm', ['recommandation' => $recommandation]); 
+    }
+
+
+
     public function update(Request $request, string $id)
     {
         //

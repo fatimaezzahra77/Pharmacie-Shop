@@ -315,17 +315,24 @@ body{
 
 .produits-header{
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .produits-seemore{
-  margin-left: 790px;
+  
+  display: flex;
   text-decoration: none;
   /* font-family: 'Aclonica'; */
 
+}
+.produits-title {
+  white-space: nowrap;
 }
 .produits-seemore:hover{
   text-decoration: underline;
   color: blue;
 }
+
 
 .produitslist-container{
   margin-left: 16px;
@@ -521,6 +528,8 @@ a{
 .redommendation-header{
   display: flex;
 }
+/* }
 #payement{
   margin: 12px;
 }
+ */
