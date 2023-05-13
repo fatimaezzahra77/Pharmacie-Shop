@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('image');
-            $table->string('prix');
+            $table->float('prix');
             $table->string('description');
             $table->string('marque');
+            $table->string('categorie');
             $table->timestamps();
         });
     }

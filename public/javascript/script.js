@@ -51,4 +51,3 @@ function showSlides(n) {
 
 // testimonial 
 
-

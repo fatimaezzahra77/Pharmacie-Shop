@@ -1,12 +1,14 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes React and other helpers. It's a great starting point while
- * building robust, powerful web applications using React + Laravel.
- */
-
-// import './bootstrap';
-// import './components/Example';
-alert('hello world');
+import './bootstrap';
+import ProductList from '../../public/js/reactCart';
 
 
-
+function App2() {
+    return (
+      <div className="App">
+       <ProductList/>
+      </div>
+    );
+  }
+  
+  export default App2;
+  

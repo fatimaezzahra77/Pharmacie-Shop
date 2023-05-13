@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -28,10 +29,10 @@
   <div class="search-bar-container"style=" padding:0.5rem;" >
     <div class="row" >
       <div class="col-md-6 offset-md-3" >
-      <a href="/" style="text-decoration: none !important; margin-top: 20px;"><span class="header"  >Pharmacie Shop</span></a>
+      <a href="/" style="text-decoration: none !important; margin-top: 20px;"><span class="header"  >Pharmacy Shop</span></a>
       <div class="icons-cntainer">
-        <a href="#"><img src="icons/user-interface.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Login</span>--></a>
-        <a href="#"><img src="icons/shopping-cart.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Mon panier</span>--></a>
+        {{-- <a href="#"><img src="icons/user-interface.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Login</span>--></a>
+        <a href="#"><img src="icons/shopping-cart.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Mon panier</span>--></a> --}}
       </div>
         <form class="form-inline my-2 my-lg-0 search-form" > 
           <input class="form-control mr-sm-2" type="search" placeholder="chercher un produit, categorie, marque..." aria-label="Search" id="search">
@@ -42,34 +43,93 @@
   </div>  
   <div>
     <nav class="navbar navbar-expand-lg ">
-   <a href=""><img src="icons/square.png" class="icon" id="icon" alt="icon"></a>
-      <a class="navbar-brand" href="#">Categories</a>
+      {{-- <a class="navbar-brand" href="#">Categories</a> --}}
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <img src="icons/square.png" class="icon" alt="icon">
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          <li>    
+            <a href=""><img src="icons/square.png" class="icon" id="icon" alt="icon"></a>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              {{-- <div class="dropdown-divider"></div> --}}
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
+
           <li class="nav-item active">
-            <a class="nav-link" href="#">Medicaments </a>
+            <a class="nav-link" href="/pagemedicaments">Medicaments </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/hygiene">Higiene et Sante</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Beaute</a>
+            <a class="nav-link" href="/beautes">Beaute</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Complements Alimentaires</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Marques</a>
-          </li>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+          <button type="button" class="btn btn-primary" data-toggle="dropdown">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
+        </button>
+        <div class="dropdown-menu">
+          <div class="row total-header-section">
+              @php $total = 0 @endphp
+              @foreach((array) session('cart') as $id => $details)
+              @php $total += (float)$details['prix'] * $details['quantity'] @endphp
+
+              @endforeach
+              <div class="col-lg-12 col-sm-12 col-12 total-section text-right">
+                  <p>Total: <span class="text-info">$ {{ $total }}</span></p>
+              </div>
+          </div>
+          @if(session('cart'))
+              @foreach(session('cart') as $id => $details)
+                  <div class="row cart-detail">
+                      <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
+                          <img src="{{ asset('roche-posay') }}/{{ $details['image'] }}" />
+                      </div>
+                      <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
+                          <p>{{ $details['nom'] }}</p>
+                          <span class="price text-info"> ${{ $details['prix'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
+                      </div>
+                  </div>
+              @endforeach
+          @endif
+          <div class="row">
+              <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
+                  <a href="{{ route('cart') }}" class="btn btn-primary btn-block">View all</a>
+              </div>
+          </div>
+      </div>
+          </div>
+        </li>        
         </ul>
       </div>
     </nav>
   </div>
-
+  <div class="container">
+    @if(session('success'))
+      <div class="alert alert-success">
+        {{session('success')}}
+      </div>
+      @endif
+  </div>
   <main>@yield('content')</main>
     {{-- <h1>This is the main page of the website</h1> --}}
+         @yield('scripts')
 </body>
 </html>

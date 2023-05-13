@@ -52,4 +52,9 @@ $app->singleton(
 |
 */
 
+$app->bind('path.public', function() {
+    return __DIR__.'/../public';
+});
+
+
 return $app;

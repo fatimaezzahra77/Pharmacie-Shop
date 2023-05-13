@@ -6,14 +6,15 @@
 
 body{
     margin: 0px;
+    background-color: rgb(245, 245, 245);
     /* background: linear-gradient(to right, #2e4723, #f8ffc8); */
-
 }
+
 #header{
     color: rgb(29, 107, 29);
     margin: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     
 }
 .btn{
@@ -22,9 +23,46 @@ body{
 .card{
     display: inline-flex;
     margin: 6px;
-    padding:2px;
-    width: 210px;
+    padding:3px;
+    width: 216px;
+    /* border: 1px solid rgb(168, 167, 167); */
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out;
 }
+.card:hover {
+  /* scale the card by 5% on hover */
+  transform: scale(1.05);
+}
+#cardprix{
+  padding: 3px;
+  border-radius: 47px;
+  border: 1px solid black;
+  background-color: rgb(255, 115, 0);
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+#cardtittle{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#cardbtn{
+  width: 11rem;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(255, 115, 0);
+}
+#cardbtn:hover{
+  background-color: rgb(201, 90, 0);
+
+}
+
 .icons-cntainer{
   position: absolute;
   top: 16;
@@ -169,16 +207,7 @@ body{
     background-color: rgb(139, 255, 183);
     color: rgb(0, 0, 0);
   }
-  
-  /* Number text (1/3 etc) */
-  /* .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  } */
-  
+
   .row:after {
     content: "";
     display: table;
@@ -490,7 +519,8 @@ a{
 
 .marques-container{
   display: flex;
-  margin-left: 10px;
+  width: 100%;
+  /* margin-left: 10px; */
 
 }
 .item-marque {
@@ -508,6 +538,43 @@ a{
   width: 260px;
   height: 200px;
 }
+
+
+/* .marques-header2 {
+  font-size: 20px;
+  font-family: 'Aclonica';
+  margin-left: 19px;
+} */
+
+.marques-container2 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-marque2 {
+  border: 1px solid black;
+  display: flex;
+  background-color: rgb(254, 255, 253);
+  padding: 3px;
+  /* width: 48%; */
+  box-shadow: 0px 2px 11px #141414;
+  height: 210px;
+  margin: 5px;
+}
+
+.item-marque2:nth-child(2n) {
+  margin-right: 0;
+}
+
+.marque-img2 {
+  width: 210px;
+  height: 180px;
+}
+
+
+
 
 #row{
   background-color: rgb(235, 232, 232);
@@ -533,3 +600,6 @@ a{
   margin: 12px;
 }
  */
+
+
+ 

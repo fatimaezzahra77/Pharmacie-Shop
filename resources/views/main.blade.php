@@ -27,7 +27,6 @@
       <img src="{{ asset('PS_images/m10.png') }}" alt="Image 6" style="width:100%; height:260px">
       <div class="caption"><b class="animate-charcter">A un prix qui vous convient!</b></div>
     </div>
-
     <div style="text-align:center">
         <span class="demo"></span>
         <span class="demo"></span>
@@ -349,7 +348,7 @@
   </div>
   <div class="row md-4">
     <div class="col-md-12 text-center">
-      <p>&copy; 2023 Your Pharmacy. All rights reserved.</p>
+      <p>&copy; 2023 Pharmacy Shop. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -378,11 +377,10 @@
 					1000:{
 						items:3
 					}
-				}
-				
+				}	
 			});
 </script>
-<script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('javascript/script.js') }}"></script>
 @endsection
 </body>
 </html>
