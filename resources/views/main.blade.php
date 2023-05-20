@@ -8,24 +8,28 @@
         <div class="caption"><b class="animate-charcter">Beaute et soins</b></div>
     </div>
     <div class="mySlides">
-      <img src="{{ asset('PS_images/m12.png') }}" alt="Image 2" style="width:100%; height:260px">
-      <div class="caption"><b class="animate-charcter">Produits pour votre propre besoin </b></div>
+      <img src="{{ asset('PS_images/co2.png') }}" alt="Image 2" style="width:100%; height:260px">
+     
     </div>
     <div class="mySlides">
-      <img src="{{ asset('PS_images/m3.png') }}" alt="Image 3" style="width:100%; height:260px">
+      <img src="{{ asset('PS_images/m7.png') }}" alt="Image 3" style="width:100%; height:260px">
       <div class="caption"><b class="animate-charcter">Des complements alimentaire</b></div>
     </div> 
     <div class="mySlides">
-      <img src="{{ asset('PS_images/m13.png') }}" alt="Image 4" style="width:100%; height:260px">
+      <img src="{{ asset('PS_images/co5.png') }}" alt="Image 2" style="width:100%; height:260px">
+     
+    </div>
+    <div class="mySlides">
+      <img src="{{ asset('PS_images/m13.jpg') }}" alt="Image 4" style="width:100%; height:260px">
       <div class="caption"><b class="animate-charcter">Naturelle pour votre sante</b></div>
     </div> 
     <div class="mySlides">
-      <img src="{{ asset('PS_images/m7.png') }}" alt="Image 5" style="width:100%; height:260px">
-      <div class="caption"><b class="animate-charcter">Livraison a votre domicile!</b></div>
+      <img src="{{ asset('PS_images/co3.jpeg') }}" alt="Image 5" style="width:100%; height:260px">
+     
     </div>
     <div class="mySlides"> 
-      <img src="{{ asset('PS_images/m10.png') }}" alt="Image 6" style="width:100%; height:260px">
-      <div class="caption"><b class="animate-charcter">A un prix qui vous convient!</b></div>
+      <img src="{{ asset('PS_images/co4.png') }}" alt="Image 6" style="width:100%; height:260px">
+      
     </div>
     <div style="text-align:center">
         <span class="demo"></span>
