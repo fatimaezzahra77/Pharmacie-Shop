@@ -9,6 +9,6 @@ class beauteController extends Controller
 {
     public function index(){
         $beautes = beaute::latest()->paginate(12);
-        return view('bautes.index', ['beautes' =>$beautes]);
+        return view('beautes.index', ['beautes' =>$beautes]);
     }
 }
