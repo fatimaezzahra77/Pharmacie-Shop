@@ -1,7 +1,7 @@
 @extends('../layout')
 @section('content')
 
-<div class="card" style="width: 15rem; cursor: pointer;">
+<div class="card maincard" style="width: 15rem; cursor: pointer;">
 <img style="height: 181px" src="{{$recommandation->image}}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>

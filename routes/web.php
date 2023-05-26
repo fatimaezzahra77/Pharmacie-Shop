@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\beauteController;
 use App\Http\Controllers\hygieneController;
+use App\Http\Controllers\complementsController;
 use App\Http\Controllers\medicamentsController;
 
 Route::get('/reactCart', [hygieneController::class, 'reactCart'])->name('reactCart');
@@ -25,7 +26,12 @@ Route::get('/recommandations/{id}', [mainController::class, 'showrecomm'])->name
 Route::get('/hygiene', [hygieneController::class, 'index']);
 Route::get('/produits/{id}', [hygieneController::class, 'singleProduct']);
 Route::get('/pagemedicaments', [medicamentsController::class, 'index']);
+// Route::get('/medicamentsproduits/{id}', [medicamentsController::class, 'index']);
 Route::get('/beautes', [beauteController::class, 'index']);
+Route::get('/beautes/{id}', [beauteController::class, 'singleProduct']);
+Route::get('/complements', [complementsController::class, 'index']);
+Route::get('/complements/{id}', [complementsController::class, 'singleProduct']);
+
 
 // Route::get('/react', function () {
 //     return view('react');

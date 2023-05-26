@@ -20,8 +20,44 @@ body{
 .btn{
     background-color: rgb(10, 77, 54);
 }
-.card{
+.maincard{
+  display: inline-flex;
+  margin: 6px;
+  padding:3px;
+  width: 216px;
+  /* border: 1px solid rgb(168, 167, 167); */
+  /* border-radius: 12px; */
+  transition: transform 0.4s ease-in-out;
+}
+.hygeienecard{
     display: inline-flex;
+    margin: 6px;
+    padding:3px;
+    width: 216px;
+    /* border: 1px solid rgb(168, 167, 167); */
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out;
+}
+.beautecard{
+  display: inline-flex;
+  margin: 6px;
+  padding:3px;
+  width: 216px;
+  /* border: 1px solid rgb(168, 167, 167); */
+  border-radius: 12px;
+  transition: transform 0.4s ease-in-out;
+}
+.medicamentcard{
+  display: inline-flex;
+  margin: 6px;
+  padding:3px;
+  width: 216px;
+  /* border: 1px solid rgb(168, 167, 167); */
+  /* border-radius: 12px; */
+  transition: transform 0.4s ease-in-out;
+}
+.complementcard{
+   display: inline-flex;
     margin: 6px;
     padding:3px;
     width: 216px;
@@ -37,13 +73,13 @@ body{
   padding: 3px;
   border-radius: 47px;
   border: 1px solid black;
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(2, 211, 30);
   width: 80px;
   height: 28px;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 #cardtittle{
@@ -54,14 +90,16 @@ body{
 #cardbtn{
   width: 11rem;
   border-radius: 25px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 500;
-  background-color: rgb(255, 115, 0);
+  background-color: rgb(2, 211, 30);
 }
 #cardbtn:hover{
-  background-color: rgb(201, 90, 0);
+  background-color: rgb(22, 56, 29);
 
 }
+
+
 
 .icons-cntainer{
   position: absolute;
@@ -71,6 +109,12 @@ body{
   align-items: center;
   justify-content: flex-end;
 }
+
+/* #medicamentimg{
+  border-radius: 12px;
+
+} */
+
 
 #search-icon{
   width: 45px;
@@ -104,24 +148,51 @@ body{
   }
 }
 
+
+
 .nav-link{
     text-decoration: none;
     color: white;
-    margin: 10px 20px ;
+    margin-left: 10px;
     font-size: 17px;
     font-family:  'Aclonica';
 }
 .nav-link:hover{
-    color: rgb(157, 233, 139);
+    color: rgb(0, 0, 0);
     
 }
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
 
+.navbar-nav {
+  align-items: center;
+}
+
+.dropdown-item{
+  color: black;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Aclonica';
+}
+/* .nav-item:hover{
+  background-color: rgb(15, 56, 26);  
+  border-radius: 20px;
+  color: white;
+} */
 .navbar{
-  background-color: #05a31a;
+  background-color: #73b504;
     align-items: center;
     height: 60px;
     
 }
+#shoppingcartIcon{
+  font-size: 28px;
+}
+/* .badge-danger:hover{
+  color: black;
+} */
 .icon{
     width:25px;
     height: 25px;
@@ -601,5 +672,13 @@ a{
 }
  */
 
+.rowcontainer{
+  display: flex;
+}
+.hygieneContainer{
+  margin-top: 20px;
+}
 
- 
+/* .categoriesforhygiene{
+  margin: 10px;
+} */

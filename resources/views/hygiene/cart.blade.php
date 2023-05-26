@@ -53,8 +53,9 @@
         </tr>
         <tr>
             <td colspan="5" class="text-right">
-                <a href="{{ url('/') }}" class="btn btn-danger"> <i class="fa fa-arrow-left"></i> Continue Shopping</a>
-                <button class="btn btn-success"><i class="fa fa-money"></i> Checkout</button>
+                <a href="{{ url('/') }}" class="btn btn-danger"> <i class="fa fa-arrow-left"></i> Continuer vos achats
+                </a>
+                <button class="btn btn-success"><i class="fa fa-money"></i> Acheter</button>
             </td>
         </tr>
     </tfoot>
@@ -107,6 +108,5 @@
         }
     });
 });
-</script>
 @endsection
 

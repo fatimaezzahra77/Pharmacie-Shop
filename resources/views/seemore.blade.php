@@ -4,7 +4,7 @@
 <h3 class="produits-title2">Medicaments sans ordonnance</h3>
 <div class="produitslist-container">
     @foreach ($medicaments as $medicament)
-    <div class="card" style="width: 15rem; cursor: pointer;">
+    <div class="card maincard" style="width: 15rem; cursor: pointer;">
       <a href="/medicaments/{{$medicament->idmedicament}}"><img style="height: 181px" src="{{$medicament->image}}" class="card-img-top" alt="image"></a>
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
