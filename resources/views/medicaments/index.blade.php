@@ -18,22 +18,23 @@
               </div>
               @endif
           </div> --}}
-          <h2 id="header">Medicaments</h2>
-          <div class="produitslist-container">
-            @foreach ($medicaments as $medicament)
-            <div class="card" style="width: 15rem; cursor: pointer;">
-              <a href="/recommandations/{{$medicament->idmedicament}}"><img style="height: 181px" src="{{$medicament->image}}" class="card-img-top" alt="image"></a>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <h2 id="header">Medicament</h2>
+          @foreach ($medicamentsproduits as $medicamentsproduit)
+          <div class="card medicamentcard">   {{-- style="width: 14rem;" --}}
+            <a href="/medicaments/{{$medicamentsproduit->idmedicament}}"><img style="height: 187px" src="{{$medicamentsproduit->image}}" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              {{-- <div> --}}
+              <p class="card-text" id="cardprix">{{$medicamentsproduit->prix}}</p>
+              {{-- <p id="prixold">{{$produit->prixold}}</p> --}}
+            {{-- </div> --}}
+              <h5 class="card-title" id="cardtittle">La Roche-Posay Effaclar Sérum Ultra Concentré Peeling Anti-Imperfections – 30ml</h5>
+              <a href="{{route('add_to_cart', $medicamentsproduit->idmedicament)}}" class="btn" id="cardbtn" >Ajouter au panier</a>
             </div>
-            @endforeach 
-        </div>
+          </div>
+          @endforeach
           <br><br>
           <div>
-            {{ $medicaments->links('pagination::bootstrap-4') }}
+            {{ $medicamentsproduits->links('pagination::bootstrap-4') }}
           </div>
         </div>
       </div>
@@ -70,8 +71,11 @@
 </div><br><br>
 <br>
 
-
-
 @include('footer')
 
 @endsection
+
+
+
+
+

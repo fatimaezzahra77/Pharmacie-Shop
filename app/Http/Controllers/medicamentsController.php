@@ -9,8 +9,14 @@ class medicamentsController extends Controller
 {
     
     public function index(){
-        $medicaments = medicament::latest()->paginate(12); // Display 10 products per page
-        return view('medicaments.index', ['medicaments' => $medicaments ]);
+        $medicamentsproduits = medicament::latest()->paginate(12); // Display 10 products per page
+        return view('medicaments.index', ['medicamentsproduits' => $medicamentsproduits ]);
+    }
+
+    public function singleProduct($id){
+        $medicamentsproduit = medicament::find($id);
+        $medicamentsproduit->image = asset($medicamentsproduit->image);
+        return view('medicaments.singleProduct', ['medicamentsproduit' => $medicamentsproduit]); 
     }
 
 }

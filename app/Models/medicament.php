@@ -9,4 +9,5 @@ class medicament extends Model
 {
     use HasFactory; 
     protected $table =  'medicaments';
+    protected $primaryKey = 'idmedicament';
 }

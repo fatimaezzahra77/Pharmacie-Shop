@@ -18,7 +18,6 @@ return new class extends Migration
             $table->float('prix');
             $table->string('description');
             $table->string('marque');
-            $table->string('categorie');
             $table->timestamps();
         });
     }

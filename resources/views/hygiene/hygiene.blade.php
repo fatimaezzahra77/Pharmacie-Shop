@@ -5,7 +5,7 @@
 <div class="container"  id="hygienesante">
   <div class="row">
     <div class="col-md-2">
-      <!-- Categories go here -->
+      {{-- Categories go here  --}}
     </div>
     <div class="col-md-10">
       <div class="row">
@@ -20,7 +20,7 @@
           </div> --}}
           <h2 id="header">{{$heading}}</h2>
           @foreach ($produits as $produit)
-          <div class="card">   {{-- style="width: 14rem;" --}}
+          <div class="card hygeienecard">   {{-- style="width: 14rem;" --}}
             <a href="/produits/{{$produit->id}}"><img src="{{$produit->image}}" class="card-img-top" alt="..."></a>
             <div class="card-body">
               {{-- <div> --}}
@@ -72,7 +72,6 @@
 <br>
 
 @include('footer')
-
 
 
 @endsection

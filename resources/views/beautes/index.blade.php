@@ -20,22 +20,21 @@
           </div> --}}
           <h2 id="header">Beaute produits</h2>
           @foreach ($beautes as $beaute)
-          <div class="card">   {{-- style="width: 14rem;" --}}
-            <a href="/beautes/{{$beaute->id
-            }}"><img src="{{$produit->image}}" class="card-img-top" alt="..."></a>
+          <div class="card beautecard">   {{-- style="width: 14rem;" --}}
+            <a href="/beautes/{{$beaute->idbeaute}}"><img src="{{$beaute->image}}" class="card-img-top" alt="..."></a>
             <div class="card-body">
               {{-- <div> --}}
-              <p class="card-text" id="cardprix">{{$produit->prix}}</p>
+              <p class="card-text" id="cardprix">{{$beaute->prix}}</p>
               {{-- <p id="prixold">{{$produit->prixold}}</p> --}}
             {{-- </div> --}}
               <h5 class="card-title" id="cardtittle">La Roche-Posay Effaclar Sérum Ultra Concentré Peeling Anti-Imperfections – 30ml</h5>
-              <a href="{{route('add_to_cart', $produit->id)}}" class="btn" id="cardbtn" >Ajouter au panier</a>
+              <a href="{{route('add_to_cart', $beaute->idbeaute)}}" class="btn" id="cardbtn" >Ajouter au panier</a>
             </div>
           </div>
           @endforeach
           <br><br>
           <div>
-            {{ $produits->links('pagination::bootstrap-4') }}
+            {{ $beautes->links('pagination::bootstrap-4') }}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 @extends('../layout')
 @section('content')
 
-<div class="card" style="width: 15rem; cursor: pointer;">
+<div class="card medicamentcard" style="width: 15rem; cursor: pointer;">
 <img style="height: 181px" src="{{$medicament->image}}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
