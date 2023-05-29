@@ -14,9 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
-       
-=======
         $this->call(ComplementsSeeder::class);
         $this->call(ProductsSeeder::class);
         $this->call(MedicamentsSeeder::class);
@@ -28,7 +25,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
->>>>>>> 95c7e3e8d44b97d8f63d2460d1896bee8ec9395b
+
         hygiene::create([
             'nom'=>'roche produit 1',
             'image' =>'hygiene_roche/rocheh1.jpg',
