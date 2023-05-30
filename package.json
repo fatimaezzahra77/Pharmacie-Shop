@@ -1,25 +1,42 @@
 {
     "private": true,
     "scripts": {
+<<<<<<< HEAD
         "dev": "vite",
         "build": "vite build"
+=======
+        "dev": "mix",
+        "watch": "mix watch",
+        "prod": "mix --production"
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
         "@vitejs/plugin-react": "^4.0.0",
         "@vitejs/plugin-vue": "^4.2.3",
+=======
+        "@vitejs/plugin-vue": "^4.0.0",
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a
         "axios": "^1.1.2",
         "bootstrap": "^5.2.3",
         "laravel-mix": "^6.0.49",
         "laravel-vite-plugin": "^0.7.2",
+<<<<<<< HEAD
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "^2.1.3",
         "sass": "^1.56.1",
         "vite": "^4.3.9",
+=======
+        "react-scripts": "^2.1.3",
+        "sass": "^1.56.1",
+        "vite": "^4.3.5",
+        "vue": "^3.2.37",
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a
         "web-vitals": "^2.1.4"
     },
     "name": "pharmacie_shop",

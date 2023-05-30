@@ -43,5 +43,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //     return view('react');
 // });
 
+<<<<<<< HEAD
 
 
+=======
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a

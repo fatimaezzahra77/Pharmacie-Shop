@@ -13,11 +13,13 @@ class beauteController extends Controller
     public function index(){
         $beautes = beaute::latest()->paginate(12);
         return view('beautes.index', ['beautes' =>$beautes]);
+
     }
 
     public function singleProduct($id){
         $beaute = beaute::find($id);
         $beaute->image = asset($beaute->image);
         return view('beautes.singleProduct', ['beaute' => $beaute]); 
+
     }
 }

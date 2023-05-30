@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
         hygiene::create([
             'nom'=>'Roche produit 1',
             'image' =>'hygiene_roche/rocheh1.jpg',

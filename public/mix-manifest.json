@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js?id=5148c69f9174a635ca741d3a4597fc10",
     "/beaute/beaute1.jpg": "/beaute/beaute1.jpg?id=cd1500a64c4c244fe2c12fe703fb5914",
     "/beaute/beaute10.jpg": "/beaute/beaute10.jpg?id=7bdad78cdfb4723c4f404b8212d7e9b7",
@@ -34,6 +35,9 @@
     "/beaute/beaute8.jpg": "/beaute/beaute8.jpg?id=78c055796e8a356215931dca7f6e0eb3",
     "/beaute/beaute9.jpg": "/beaute/beaute9.jpg?id=7f4d31ee8a1a5e008cd1cf1f0878814b",
     "/beaute/beuate29.jpg": "/beaute/beuate29.jpg?id=07dc8be99d4d6ef5490e3ee29921b738",
+=======
+    "/js/app.js": "/js/app.js?id=239a1921ff1d85469e65bd2d0caa2a65",
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a
     "/cerave/ceravep1.jpg": "/cerave/ceravep1.jpg?id=308bfbe5caa67633b4f7e0039af01567",
     "/cerave/ceravep10.jpg": "/cerave/ceravep10.jpg?id=20c72710cfed11ad80c7a1b4ead3b1ce",
     "/cerave/ceravep2.jpg": "/cerave/ceravep2.jpg?id=20c72710cfed11ad80c7a1b4ead3b1ce",
@@ -44,7 +48,11 @@
     "/cerave/ceravep7.jpg": "/cerave/ceravep7.jpg?id=5ed6b31d5258b898e5e388d5ea0acee8",
     "/cerave/ceravep8.jpg": "/cerave/ceravep8.jpg?id=42f8093cd41d63a5b4108c16030e1e4c",
     "/cerave/ceravep9.jpg": "/cerave/ceravep9.jpg?id=308bfbe5caa67633b4f7e0039af01567",
+<<<<<<< HEAD
     "/css/style.css": "/css/style.css?id=ef625863d40759db44910f01e57dccd5",
+=======
+    "/css/style.css": "/css/style.css?id=0da860c86546ebef74ac17dc83eb29cf",
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a
     "/favicon.ico": "/favicon.ico?id=b813881ffe7b1199eee34977e7a31bf9",
     "/fonts/Aclonica-Regular.ttf": "/fonts/Aclonica-Regular.ttf?id=c5ac3f8f05fbab555c021957c2dd4417",
     "/hygiene_biafine/biafineh1.jpg": "/hygiene_biafine/biafineh1.jpg?id=f6b51ddcf74cf33a59587d415810c10c",
@@ -84,10 +92,10 @@
     "/images/m6.jpg": "/images/m6.jpg?id=c5c64a457d5d4c95b9875d7cb0b0a5f4",
     "/index.html": "/index.html?id=5792e872bdfa3665397fd22d40f3b302",
     "/index.php": "/index.php?id=3b58bff18126a61c142cc576457c82a6",
-    "/javascript/script.js": "/javascript/script.js?id=a0b212af243248a3943451f562bfb2a1",
+    "/javascript/script.js": "/javascript/script.js?id=3149acbc60d4734ef066ded71676317e",
     "/js/chunks/node_modules_web-vitals_dist_web-vitals_js.js": "/js/chunks/node_modules_web-vitals_dist_web-vitals_js.js?id=50d8f0993d28eaf27ca019b5ce4cfcf3",
-    "/js/hehehe.js": "/js/hehehe.js?id=3995dff2be655f56dbbad96dc1ab1d60",
-    "/js/reactCart.js": "/js/reactCart.js?id=762781df0c94db90d0e5f16b39c33354",
+    "/js/hehehe.js": "/js/hehehe.js?id=190ca7da82d2875cede611eefee8f426",
+    "/js/reactCart.js": "/js/reactCart.js?id=5e959b9efc5803218a29a187944e9363",
     "/livraison/bitcoin.png": "/livraison/bitcoin.png?id=2316464b94e54cc52340f8ce09c08d9e",
     "/livraison/bitcoin2.png": "/livraison/bitcoin2.png?id=f5198871595da2eef31c1e7ba854e1fa",
     "/livraison/paypal.png": "/livraison/paypal.png?id=188ff54f7aa327ae6884af8306922cb0",
@@ -143,6 +151,7 @@
     "/portrait/portrait7.png": "/portrait/portrait7.png?id=92ab3526122896af3f30fd6c774a735e",
     "/portrait/portrait8.png": "/portrait/portrait8.png?id=8940166dbe6994c72a5158e5ef94b095",
     "/portrait/portrait9.png": "/portrait/portrait9.png?id=e4e38ec7b7bfa0458b585a6d7dc4d1d1",
+<<<<<<< HEAD
     "/Product_Unicity/Aloe_Vera.png": "/Product_Unicity/Aloe_Vera.png?id=9ccd0f8241914a00cc2ccbd6997ea700",
     "/Product_Unicity/Balance.png": "/Product_Unicity/Balance.png?id=9344806340ded2f5ad3cbb10e9094cc7",
     "/Product_Unicity/Balance2.png": "/Product_Unicity/Balance2.png?id=1b198bd5f5923b68210a7ccdcd97d97a",
@@ -155,6 +164,8 @@
     "/Product_Unicity/Probionic_Plus2.jpg": "/Product_Unicity/Probionic_Plus2.jpg?id=c41ccf6c0ec7c10350d5f3dcc812b30a",
     "/Product_Unicity/Probionic_Plus3.png": "/Product_Unicity/Probionic_Plus3.png?id=87ead9c1046995f13a090f9298aea474",
     "/Product_Unicity/Unimate_Lemon.png": "/Product_Unicity/Unimate_Lemon.png?id=e1628af73ac4f3eca3f898537578b754",
+=======
+>>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a
     "/produitsmix/produitmix1.jpg": "/produitsmix/produitmix1.jpg?id=38452274a47c711c59c71b66b6a6ae45",
     "/produitsmix/produitmix10.jpg": "/produitsmix/produitmix10.jpg?id=60e02fbd9acc46243ce75293ee500bcc",
     "/produitsmix/produitmix11.jpg": "/produitsmix/produitmix11.jpg?id=695c0fbba62a9d0c3e61bee332a6a80f",
