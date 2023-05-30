@@ -26,56 +26,56 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         hygiene::create([
-            'nom'=>'roche produit 1',
+            'nom'=>'Roche produit 1',
             'image' =>'hygiene_roche/rocheh1.jpg',
             'prix'=>'125.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 2',
+            'nom'=>'Roche produit 2',
             'image' =>'hygiene_roche/rocheh2.jpg',
             'prix'=>'125.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 3',
+            'nom'=>'Roche produit 3',
             'image' =>'hygiene_roche/rocheh3.jpg',
             'prix'=>'120.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 4',
+            'nom'=>'Roche produit 4',
             'image' =>'hygiene_roche/rocheh4.jpg',
             'prix'=>'120.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 5',
+            'nom'=>'Roche produit 5',
             'image' =>'hygiene_roche/rocheh5.jpg',
             'prix'=>'140.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 6',
+            'nom'=>'Roche produit 6',
             'image' =>'hygiene_roche/rocheh6.jpg',
             'prix'=>'60.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 7',
+            'nom'=>'Roche produit 7',
             'image' =>'hygiene_roche/rocheh8.jpg',
             'prix'=>'60.00',
             'description'=>'lorem',
             'marque'=>'roche-posay'
         ]);
         hygiene::create([
-            'nom'=>'roche produit 8',
+            'nom'=>'Roche produit 8',
             'image' =>'hygiene_roche/rocheh9.jpg',
             'prix'=>'60.00',
             'description'=>'lorem',

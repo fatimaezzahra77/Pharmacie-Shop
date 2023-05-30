@@ -4,13 +4,13 @@ use App\Models\hygiene;
 use App\Models\recommandation;
 use Illuminate\Foundation\Vite;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\avisController;
 use App\Http\Controllers\mainController;
+use App\Http\Controllers\userController;
 use App\Http\Controllers\beauteController;
 use App\Http\Controllers\hygieneController;
 use App\Http\Controllers\complementsController;
 use App\Http\Controllers\medicamentsController;
-
-Route::get('/reactCart', [hygieneController::class, 'reactCart'])->name('reactCart');
 
 Route::get('/', [mainController::class, 'main']);
 Route::get('/medicaments', [mainController::class, 'index']);
@@ -26,13 +26,22 @@ Route::get('/recommandations/{id}', [mainController::class, 'showrecomm'])->name
 Route::get('/hygiene', [hygieneController::class, 'index']);
 Route::get('/produits/{id}', [hygieneController::class, 'singleProduct']);
 Route::get('/pagemedicaments', [medicamentsController::class, 'index']);
-// Route::get('/medicamentsproduits/{id}', [medicamentsController::class, 'index']);
 Route::get('/beautes', [beauteController::class, 'index']);
 Route::get('/beautes/{id}', [beauteController::class, 'singleProduct']);
 Route::get('/complements', [complementsController::class, 'index']);
 Route::get('/complements/{id}', [complementsController::class, 'singleProduct']);
+Route::resource('avis', avisController::class);
+Route::get('avis/showAvis/{id}', [avisController::class, 'showAvis'])->name('avis.showAvis');
+Route::resource('users', userController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // Route::get('/react', function () {
 //     return view('react');
 // });
+
+
+

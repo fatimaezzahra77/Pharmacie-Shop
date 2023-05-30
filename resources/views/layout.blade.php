@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'Laravel') }}</title>
+    {{-- <link rel="stylesheet" href="{{ mix('css/app.css') }}"> --}}
+    <script src="{{ mix('js/app.js') }}"></script>    
+
+    <script src="https://kit.fontawesome.com/b4a121d693.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> --}}
     <script src="https://kit.fontawesome.com/1a050fedc2.js" crossorigin="anonymous"></script>
@@ -22,10 +28,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+
+    <!-- Scripts -->
+    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+    
     <title>Pharmacie Shop</title>
 </head>
 
-<body>
+<body>  
   <div class="search-bar-container"style=" padding:0.5rem;" >
     <div class="row" >
       <div class="col-md-6 offset-md-3" >
@@ -33,6 +48,22 @@
       <div class="icons-cntainer">
         {{-- <a href="#"><img src="icons/user-interface.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Login</span>--></a>
         <a href="#"><img src="icons/shopping-cart.png" class="icon" id="search-icon" alt="icon"><!--<span class="span">Mon panier</span>--></a> --}}
+       
+        @guest
+          <a class="nav-link nav-login" href="{{route('login')}}">Login</a>
+        
+          <a class="nav-link nav-login" href="{{route('register')}}">Inscription</a>
+        @else
+         BienVenue {{Auth::user()->name}}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:inline">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
+        
+        @endguest  
+          
+      
       </div>
         <form class="form-inline my-2 my-lg-0 search-form" > 
           <input class="form-control mr-sm-2" type="search" placeholder="chercher un produit, categorie, marque..." aria-label="Search" id="search">
@@ -117,7 +148,27 @@
               </div>
               </a>
             </div>
-        </li>        
+        </li> 
+        {{-- @guest
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('login')}}">Login</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('register')}}">Inscription</a>
+        </li>
+        @else
+        <li class="nav-item">
+         BienVenue {{Auth::user()->name}}
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:inline">
+            @csrf
+            <button type="submit">Logout</button>
+        </form>
+        
+        </li>
+        @endguest        --}}
         </ul>
       </div>
     </nav>

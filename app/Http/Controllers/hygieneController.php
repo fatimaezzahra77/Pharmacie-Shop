@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\avi;
 use App\Models\hygiene;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
@@ -27,6 +28,7 @@ class hygieneController extends BaseController
 
     public function singleProduct($id){
         $produit = hygiene::find($id);
+        // $avi = avi::all();
         $produit->image = asset($produit->image);
         return view('hygiene.singleProduct', ['produit' => $produit]); 
     }
