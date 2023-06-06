@@ -258,7 +258,7 @@
       <div class="row" id="row">
         <div class="col-md-12  "id="column">
           <p class="descritpion-content">
-          Bienvenue sur shop-pharmacie.fr,  votre pharmacie et parapharmacie en ligne pour la France.
+          Bienvenue sur Pharmacy-Shop.ma,  votre pharmacie et parapharmacie en ligne pour casablanca.
            Commandez facilement en ligne des médicaments sans ordonnance et des cosmétiques, puis recevez-les 
            directement à votre domicile. Profitez d’une navigation facile et agréable grâce à nos différents 
            espaces qui vous permettront de trouver rapidement ce dont vous avez besoin pour vous et toute votre 
@@ -290,9 +290,9 @@
         <div class="col-md-12" id="column">
           <h4 class="descritpion-header">Un service de livraison efficace</h4>
           <p class="descritpion-content">
-          Commandez sur shop-pharmacie.fr en quelques clics, 24h sur 24 et 7 jours sur 7. Faites-vous livrer en
-          quelques jours tous vos médicaments sans ordonnance et vos produits préférés en France métropolitaine.
-          Vous pouvez opter pour la livraison à domicile ou pour la livraison en Point Relais®. À partir de 49 €
+          Commandez sur Pharmacy-Shop.ma en quelques clics, 24h sur 24 et 7 jours sur 7. Faites-vous livrer en
+          quelques jours tous vos médicaments sans ordonnance et vos produits préférés en maroc métropolitaine.
+          Vous pouvez opter pour la livraison à domicile ou pour la livraison en Point Relais®. À partir de 49 DH
           d'achat, nous vous offrons les frais de livraison !
           </p>
         </div>
@@ -312,7 +312,7 @@
   </div>
 </div>
 <br><br>
-<footer class="bg-dark text-light py-3">
+{{-- <footer class="bg-dark text-light py-3">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -355,7 +355,7 @@
       <p>&copy; 2023 Pharmacy Shop. All rights reserved.</p>
     </div>
   </div>
-</footer>
+</footer> --}} @include('footer')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 <script>

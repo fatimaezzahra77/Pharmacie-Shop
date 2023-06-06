@@ -14,12 +14,14 @@ return new class extends Migration
         Schema::create('avies', function (Blueprint $table) {
             $table->id('idavis');
             $table->foreignId('iduser')->nullable()->default(null);
+            $table->foreignId('id')->nullable()->default(null);
             $table->string('name');
             $table->string('email');
             $table->text('avis');
             $table->string('image');
             $table->string('rate');
             $table->foreign('iduser')->references('iduser')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id')->references('id')->on('hygiene')->onDelete('cascade')->onUpdate('cascade'); 
             $table->timestamps();
         });
     }

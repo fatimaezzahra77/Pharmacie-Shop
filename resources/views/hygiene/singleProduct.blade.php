@@ -52,17 +52,16 @@
                   <img src="{{$produit->image}}" alt="imageLodingError" style="height: 400px; width: 400px">
                 </div>
                 <div class="col-md-6">
-                  <h1 class="singleProductTitle">{{$produit->nom}}</h1>
+                  <h1 class="singleProductTitle">CeraVe Crème Hydratante Visage Peaux Normales à Sèches – 52ml</h1> {{--{{$produit->nom}}--}}
                   <hr style="color: #73b504; border:2px solid; border-radius:3px">
-                  <p class="singleProductTags">Anti-Âge | Visage & Corps | Flacon Buvable | Complement</p>
-                  <p class="singleProductPrix">{{$produit->prix}}DH</p>
-                  <p class="singleProductLittleDesc">Quick description Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ipsam cumque saepe officiis ipsa maiores, tempora, doloremque, molestiae vero quibusdam 
-                    exercitationem placeat eaque pariatur quo sed minima tempore dicta reiciendis quidem.
+                  <p class="singleProductTags">Hydratant | Visage | Crème</p>
+                  <p class="singleProductPrix">119 DH</p>{{--{{$produit->prix}}---}}
+                  <p class="singleProductLittleDesc">Crème hydratante pour adultes. Application sur visage. Indiqué pour les peaux normales à sèches.
+
+                    Achetez CeraVe Crème Hydratante Visage Peaux Normales à Sèches – 52ml sur PahrmacyShop.ma, votre pharmacie en ligne 100% digitale qui vous livre tous vos produits au Casablanca et aux meilleurs prix.
                   </p>
                   <button class="singleProductButton">Ajouter au panier</button> <br><br>
-                  <p class="singleProductCategories">Categories: Compléments anti-âge, Corps, Skincare corps, Soins anti-âge visage, Soins de jour anti-âge 
-                    visage, Visage</p>
+                  <p class="singleProductCategories">Categories: Hydratants visage, Skincare visage, Visage</p>
                 </div>
               </div>
             </div>     
@@ -70,30 +69,29 @@
         <div class="row">
           <div class="productDescription">
             <h3 class="productdescriptionTitle">Description</h3><br>
-            <h5 class="productquestion">C'est quoi Auracos Pro.Collagenium Elixir Anti-Âge Collagène Marin Buvable – 14 Flacons ?</h5>
+            <h5 class="productquestion">C'est quoi CeraVe Crème Hydratante Visage Peaux Normales à Sèches - 52ml ?</h5>
             <hr><br>
-            <p class="productdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab obcaecati dolores sed esse beatae
-             modi odit aspernatur voluptas et, quas officiis! Adipisci ut quibusdam quia autem quis minima 
-             architecto omnis
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum ad illum aspernatur sint eveniet, in esse dolore? Numquam repudiandae dolor labore ducimus 
-                saepe deserunt quisquam cumque aliquid fugit molestiae!
-             
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sed vitae omnis earum, libero 
-                  architecto nesciunt quae aperiam. Maiores facere fuga dolor ut recusandae, optio atque nam r
-                  epellendus eligendi deleniti?
+            <p class="productdetails">Pour les peaux normales à sèches
+
+              Hydrate la peau en continu et aide à préserver la barrière protectrice du visage et du cou.
+              Développée avec des dermatologues, la crème hydratante visage CeraVe hydrate au quotidien et aide à préserver la barrière protectrice du visage et du cou. Sa texture ultra légère, non grasse, enrichie aux 3 céramides essentiels et à l’acide hyaluronique procure une hydratation tout au long de la journée, et dès la première utilisation.
               
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias eveniet ducimus 
-                  beatae, maiores, omnis, quod unde sunt ex quas deleniti voluptatem nostrum non eius sapiente
-                  deserunt ratione ipsam perspiciatis!
+              Trois céramides essentiels pour aider à maintenir la peau hydratée et à restaurer la barrière cutanée.
+              La Technologie MVE permet d’encapsuler les actifs et de les diffuser dans la peau en continu. Cela permet de restaurer la barrière cutanée et de l’hydrater tout au long de la journée après seulement une application.
+              Caractéristiques et bénéfices produit:
+              
+              Non comédogène
+              Doux Pour la Peau Convient aux peaux sensibles
+              Sans Parfum.
+            </p>
           </div>
           <div class="conseilsDapplication">
             <h3 class="conseilsDapplicationTitle">Conseils d'application</h3>
             <hr><br>
                 <ul class="conseilsDapplicationDesc" >
-                  <li>Dans un 1er temps, commandez votre cure de 3 mois, c’est-à-dire 6 boites de Pro-Collagenium.</li>
-                  <li>Tous les jours buvez 1 flacon de Pro-Collagenium, à consommer le matin au moment du petit déjeuner.</li>
-                <li>Une fois votre cure terminé, reprenez 6 autres boites 6 mois après le commencement de votre traitement.</li>
-              <li>Auracos Pro-Collagenium est un produit à base de poisson et contient du Gluten, les personnes allergiques ne doivent surtout pas en consommer.</li>  
+                  <li>Appliquer aussi souvent que nécessaire.</li>
+                  <li>Eviter le coutour des yeux.</li>
+                <li>En cas de contact avec les yeux, les rincer immédiatement et abondamment.</li>
               </ul>  <br>          
           </div>
           <div class="avisSection">
@@ -101,14 +99,13 @@
             <hr>
             <div class="box-area">	
               <div class="img-area">
-                <img src="portrait/portrait2.png" alt="">
+                <img src="portrait/portrait3.png" alt="">
               </div>	
               <h5>Salma</h5>
-              <span>rating Goes Here</span>									
+              <span></span>	{{--rating Goes Here--}}			
               <p class="client_opinion">
-                Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since.
+                J'adore ce produit de soin de la peau ! Il laisse ma peau douce, hydratée et radieuse. 
+                Recommandé à tous ceux qui cherchent une routine de soins efficace..
               </p>
             </div> 
             @include('avisCreate') <br>

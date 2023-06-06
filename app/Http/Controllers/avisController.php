@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\avi;
 use App\Models\User;
+use App\Models\hygiene;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -23,13 +24,15 @@ class avisController extends Controller
     public function create()
     {
         $users = User::all();
-        return view('avisCreate', ['avis'=>$avis, 'users'=>$users]);
+        $produit = hygiene::all();
+        return view('avisCreate', ['avis'=>$avis, 'users'=>$users, 'produit'=>$produit]);
     }
 
     public function showAvis($id){
         $avi = avi::findorFail($id);
+        $produit=hygiene::all();
         // $avi->image = asset($avi->image);
-        return view('showAvis', ['avi' => $avi]); 
+        return view('showAvis', ['avi' => $avi, 'produit'=>$produit]); 
     }
 
     /**
@@ -61,9 +64,9 @@ class avisController extends Controller
         if ($request->hasFile('image')) {
             $validated['image'] = $request->file('image')->store('imageAvies', 'public');
         }
-        
     
         $avi = avi::create([
+            'id'=>$request->input('id'),
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'avis' => $request->input('avis'),

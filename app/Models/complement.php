@@ -12,4 +12,7 @@ class complement extends Model
     protected $primaryKey = 'idcomplement';
     protected $fillable =['nom', 'image', 'prix', 'description', 'marque'];
 
+    public function Avis(){
+        return $this->hasMany(avi::class);
+    }
 }

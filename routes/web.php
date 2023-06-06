@@ -30,9 +30,9 @@ Route::get('/beautes', [beauteController::class, 'index']);
 Route::get('/beautes/{id}', [beauteController::class, 'singleProduct']);
 Route::get('/complements', [complementsController::class, 'index']);
 Route::get('/complements/{id}', [complementsController::class, 'singleProduct']);
-Route::resource('avis', avisController::class);
-Route::get('avis/showAvis/{id}', [avisController::class, 'showAvis'])->name('avis.showAvis');
+Route::get('/avis/showAvis/{id}', [avisController::class, 'showAvis'])->name('avis.showAvis');
 Route::resource('users', userController::class);
+Route::resource('avis', avisController::class);
 
 Auth::routes();
 
@@ -42,12 +42,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Route::get('/react', function () {
 //     return view('react');
 // });
-
-<<<<<<< HEAD
-
-
-=======
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
->>>>>>> ba40fb2132eca7903f6f76ffe548b9a37ea5811a

@@ -21,8 +21,8 @@
           <h5>Contactez nous</h5>
           <ul class="list-unstyled">
             <li>Address: Casablanca, Morocco</li>
-            <li>Phone: XXX-XXX-XXXX</li>
-            <li>Email: pharmacieShop@gmail.com</li>
+            <li>Phone: +212-152-1976</li>
+            <li>Email: pharmacyShop@gmail.com</li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -38,7 +38,7 @@
     </div>
     <div class="row md-4">
       <div class="col-md-12 text-center">
-        <p>&copy; 2023 Pharmacy Shop. All rights reserved.</p>
+        <p>&copy; 2023 Pharmacy Shop. Tous les droits sont reserves.</p>
       </div>
     </div>
   </footer>

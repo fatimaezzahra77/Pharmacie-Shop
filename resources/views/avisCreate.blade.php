@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      
+      {{-- <input type="text" name="id" value="{{$produit->id}}" hidden> --}}
     <div class="form-group">
         <label for="name">Nom</label>
         <input type="text" class="form-control" name="name" value="{{ old('name') }}">
@@ -49,7 +49,9 @@
         @enderror
     </div>
     <br>
-    <button href="{{route('add_to_cart', $produit->id)}}" type="submit" class="btn btn-primary BtnAvis">Soumettre</button>
+    <button href="" type="submit" class="btn btn-primary BtnAvis">Soumettre</button>
+    {{-- <button href="{{route('add_to_cart', $produit->id)}}" type="submit" class="btn btn-primary BtnAvis">Soumettre</button> --}}
+
 </form>
 <br>
 </div><br>

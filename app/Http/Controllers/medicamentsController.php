@@ -13,10 +13,10 @@ class medicamentsController extends Controller
         return view('medicaments.index', ['medicamentsproduits' => $medicamentsproduits ]);
     }
 
-    public function singleProduct($id){
-        $medicamentsproduit = medicament::find($id);
-        $medicamentsproduit->image = asset($medicamentsproduit->image);
-        return view('medicaments.singleProduct', ['medicamentsproduit' => $medicamentsproduit]); 
-    }
+    // public function singleProduct($id){
+    //     $medicamentsproduit = medicament::find($id);
+    //     $medicamentsproduit->image = asset($medicamentsproduit->image);
+    //     return view('medicaments.singleProduct', ['medicamentsproduit' => $medicamentsproduit]); 
+    // }
 
 }

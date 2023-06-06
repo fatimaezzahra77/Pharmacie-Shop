@@ -2,12 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\avi;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class medicament extends Model
 {
     use HasFactory; 
     protected $table =  'medicaments';
     protected $primaryKey = 'idmedicament';
+    protected $fillable =[' nom', 'image', 'prix', 'description', 'marque'] ;
+
+    public function Avis(){
+        return $this->hasMany(avi::class);
+    }
 }
